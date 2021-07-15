@@ -4,7 +4,7 @@ import subprocess
 import optparse
 import pyfiglet
 
-result=pyfiglet.figlet_format("F@*£ Society")
+result=pyfiglet.figlet_format("F@*£ Society macChanger")
 
 print(result)
 def get_argument():
