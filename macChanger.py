@@ -2,7 +2,11 @@
 
 import subprocess
 import optparse
+import pyfiglet
 
+result=pyfiglet.figlet_format("F@*£ Society")
+
+print(result)
 def get_argument():
     parser = optparse.OptionParser()
     parser.add_option("--interface", dest="interface", help="select interface")
