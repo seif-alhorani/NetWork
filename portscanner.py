@@ -1,3 +1,5 @@
+#!usr/bin/env python
+
 import socket as sk
 
 for port in range(1,1024):
