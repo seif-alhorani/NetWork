@@ -6,7 +6,7 @@ int main()
 {
 
     int i=0;
-    while(i<=1){
+    while(i<=5){
         printf("Building dependency tree... Done\n");
         printf("Reading state information... Done\n");
         printf("The following additional packages will be installed:\n");
@@ -24,6 +24,63 @@ int main()
         // Downloading packages
         printf("Get:1 http://archive.ubuntu.com/ubuntu focal/universe amd64 libatomic1 amd64 10.3.0-1ubuntu1 [9,216 B]\n");
         printf("Fetched 9,216 B in 0s (0 B/s)\n");
+        printf("Get:1 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]\n");
+        printf("Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease\n");
+        printf("Get:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]\n");
+         printf("Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease\n");
+        printf("Get:4 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [991 kB]\n");
+         printf("Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease\n");
+        printf("Get:5 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [192 kB]\n");
+         printf("Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease\n");
+        printf("Get:6 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]\n");
+         printf("Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease\n");
+        printf("Get:7 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [11.4 kB]\n");
+         printf("Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease\n");
+        printf("Get:8 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1147 kB]\n");
+         printf("Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease\n");
+        printf("Get:9 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [14.1 MB]\n");
+         printf("Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease\n");
+        printf("Get:10 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [187 kB]\n");
+         printf("Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease\n");
+        printf("Get:11 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 c-n-f Metadata [520 B]\n");
+        printf("Get:12 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [799 kB]\n");
+         printf("Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease\n");
+        printf("Get:13 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [148 kB]\n");
+        printf("Get:14 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [16.8 kB]\n");
+        printf("Get:15 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [36.5 kB]\n");
+        printf("Get:16 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [7060 B]\n");
+        printf("Get:17 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [260 B]\n");
+         printf("Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease\n");
+        printf("Get:18 http://archive.ubuntu.com/ubuntu jammy/universe Translation-en [5652 kB]\n");
+        printf("Get:19 http://archive.ubuntu.com/ubuntu jammy/universe amd64 c-n-f Metadata [286 kB]\n");
+         printf("Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease\n");
+        printf("Get:20 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [217 kB]\n");
+        printf("Get:21 http://archive.ubuntu.com/ubuntu jammy/multiverse Translation-en [112 kB]\n");
+         printf("Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease\n");
+        printf("Get:22 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 c-n-f Metadata [8372 B]\n");
+        printf("Get:23 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1200 kB]\n");
+         printf("Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease\n");
+        printf("Get:24 http://archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [252 kB]\n");
+        printf("Get:25 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 c-n-f Metadata [16.1 kB]\n");
+        printf("Get:26 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1167 kB]\n");
+        printf("Get:27 http://archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [190 kB]\n");
+        printf("Get:28 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 c-n-f Metadata [520 B]\n");
+        printf("Get:29 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1005 kB]\n");
+        printf("Get:30 http://archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [222 kB]\n");
+        printf("Get:31 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [22.1 kB]\n");
+        printf("Get:32 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [41.6 kB]\n");
+         printf("Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease\n");
+        printf("Get:33 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [9768 B]\n");
+        printf("Get:34 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [472 B]\n");
+        printf("Get:35 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [64.2 kB]\n");
+        printf("Get:36 http://archive.ubuntu.com/ubuntu jammy-backports/main Translation-en [10.5 kB]\n");
+        printf("Get:37 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]\n");
+        printf("Get:38 http://archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 c-n-f Metadata [116 B]\n");
+        printf("Get:39 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [27.8 kB]\n");
+        printf("Get:40 http://archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16.4 kB]\n");
+        printf("Get:41 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [644 B]\n");
+        printf("Get:42 http://archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 c-n-f Metadata [116 B]\n");
+
         // Installing packages
          Sleep(400);
         printf("Selecting previously unselected package libatomic1:amd64.\n");
@@ -93,7 +150,7 @@ int main()
         if(i%2==0){
             for(int j=0;j<=100;j++){
                 Sleep(100);
-                printf("Fetched %d kB in %ds (%d B/s)\n",j,rand(),j);
+                printf("Fetched %d kB in %ds (%d B/s)\n",j,rand(),rand());
             }
         }
         printf("E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/gcc-11-base_11.3.0-1ubuntu1%%7e22.04_amd64.deb  404  Not Found [IP: 91.189.91.82 80]\n");
